@@ -7,3 +7,6 @@ fmt-check:
 setup-git-hooks:
 	rm -rf .git/hooks
 	(cd .git && ln -s ../.git-hooks hooks)
+
+commit-terraform-lock:
+	slu git commit terraform-lock
